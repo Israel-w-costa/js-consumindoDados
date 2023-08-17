@@ -22,7 +22,8 @@ async function buscaEndereco (cep) {
     estado.value = consultaCepConvetida.uf
 
 } catch (erro) {
-    mensagemErro.innerHTML =`<p>${erro}</p>`
+    mensagemErro.innerHTML =`<p>Cep está invalido</p>`
+    console.log (erro)
 
 }
 }
